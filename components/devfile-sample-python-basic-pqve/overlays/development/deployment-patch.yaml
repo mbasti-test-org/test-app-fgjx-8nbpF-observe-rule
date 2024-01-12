@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-pqve
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/mbasti-test-org/build-e2e-rokc-tenant/test-app-fgjx/devfile-sample-python-basic-pqve@sha256:3fe8a8149c94293a5ef6323ff4775910b100b7150d6ce4a30a4b5069fcc40ac6
+        name: my-python
+        resources: {}
+status: {}
